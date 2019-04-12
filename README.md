@@ -1,3 +1,8 @@
+This is the backend for the contact beta app (C# / .net / ASP).
+Microsoft makes it difficult, or expensive, to use anything other than ms sql server or cosmos. Unfortunately, consmos is relatively new and not very well documented. If the php solution does not work we will use custom configuration, combined with linked files, to establish connections and make queries." I was, and continue to be very hesistant about this because apis are safer. However, with sufficient protections these concerns could be mitigated, just not as well as with a .net api.
+Regardless . . . I am hoping that php can be utilized.
+
+
 This is text I missed on intial on configuration:
 
 
