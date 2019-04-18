@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="User/ Email" HorizontalAlignment="Left" Margin="320,82,0,0" VerticalAlignment="Top" Height="36" Width="72"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="320,182,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="320,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="226"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="320,213,0,0" VerticalAlignment="Top" Height="30" Width="226"/>
+        <Button Content="Forgot Password" HorizontalAlignment="Left" Margin="320,267,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="438,267,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click"/>
+        <Label Content="First time user? Create an account" HorizontalAlignment="Left" Height="30" Margin="320,313,0,0" VerticalAlignment="Top" Width="226"/>
+        <Button Content="Create An Account" HorizontalAlignment="Left" Margin="320,348,0,0" VerticalAlignment="Top" Width="226" Click="Button_Click_1"/>
+        <Label Content="Client Organizer" HorizontalAlignment="Left" Height="53" Margin="320,10,0,0" VerticalAlignment="Top" Width="226" FontSize="20"/>
+    </Grid>
+</Window>
