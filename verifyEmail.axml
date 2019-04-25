@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<TextView
+		android:textSize="17dp"
+		android:textStyle="bold"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="22dp"
+		android:text="Verify Email and Phone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView12" />
+	<LinearLayout
+		android:layout_marginTop="22dp"
+		android:layout_marginRight="22dp"
+		android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+		android:layout_marginLeft="22dp">
+		<TextView
+		android:paddingRight="72dp"
+		android:text="Email"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView12" />
+	
+		<android.support.design.widget.TextInputEditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textInputEditText1" />
+
+
+		</LinearLayout>
+
+	<LinearLayout
+		android:layout_marginTop="22dp"
+		android:layout_marginRight="22dp"
+		android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+		android:layout_marginLeft="22dp">
+		<TextView
+		android:paddingRight="82dp"
+		android:text="Text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView12" />
+	
+		<android.support.design.widget.TextInputEditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textInputEditText1" />
+
+
+		</LinearLayout>
+
+	<LinearLayout
+		android:layout_marginTop="22dp"
+		android:layout_marginRight="22dp"
+		android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+		android:layout_marginLeft="22dp">
+		<TextView
+		android:paddingRight="38dp"
+		android:text="Enter Code"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView12" />
+	
+		<android.support.design.widget.TextInputEditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textInputEditText1" />
+
+		</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_marginTop="22dp"
+		android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+		android:layout_marginLeft="120dp">
+		<Button
+			
+		android:text="Resend"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/button2"
+		android:layout_gravity="right" />
+
+		<Button
+			
+		android:text="Enter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/button3"
+		android:layout_gravity="right" />
+
+
+		</LinearLayout>
+
+</LinearLayout>
