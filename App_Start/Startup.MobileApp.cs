@@ -26,10 +26,10 @@ namespace Contact_Billing_XamarinService
                 .ApplyTo(config);
 
             // Use Entity Framework Code First to create database tables based on your DbContext
-            Database.SetInitializer(new Contact_Billing_XamarinInitializer());
+            //Database.SetInitializer(new Contact_Billing_XamarinInitializer());
 
             // To prevent Entity Framework from modifying your database schema, use a null database initializer
-            // Database.SetInitializer<Contact_Billing_XamarinContext>(null);
+            Database.SetInitializer<Contact_Billing_XamarinContext>(null);
 
             MobileAppSettingsDictionary settings = config.GetMobileAppSettingsProvider().GetMobileAppSettings();
 
@@ -49,23 +49,23 @@ namespace Contact_Billing_XamarinService
         }
     }
 
-    public class Contact_Billing_XamarinInitializer : CreateDatabaseIfNotExists<Contact_Billing_XamarinContext>
+   /* public class Contact_Billing_XamarinInitializer : CreateDatabaseIfNotExists<Contact_Billing_XamarinContext>
     {
         protected override void Seed(Contact_Billing_XamarinContext context)
         {
-            List<TodoItem> todoItems = new List<TodoItem>
+            List<Users> users = new List<Users>
             {
-                new TodoItem { Id = Guid.NewGuid().ToString(), Text = "First item", Complete = false },
-                new TodoItem { Id = Guid.NewGuid().ToString(), Text = "Second item", Complete = false },
+                new Users { Id = Guid.NewGuid().ToString(), Text = "First item", Complete = false },
+                new Users { Id = Guid.NewGuid().ToString(), Text = "Second item", Complete = false },
             };
 
-            foreach (TodoItem todoItem in todoItems)
+            foreach (Users users2 in users)
             {
-                context.Set<TodoItem>().Add(todoItem);
+                context.Set<Users>().Add(Users);
             }
 
             base.Seed(context);
         }
-    }
+    }*/
 }
 

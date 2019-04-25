@@ -1,9 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
-using Microsoft.Azure.Mobile.Server;
 using Microsoft.Azure.Mobile.Server.Tables;
-using Contact_Billing_XamarinService.DataObjects;
 
 namespace Contact_Billing_XamarinService.Models
 {
@@ -22,14 +20,20 @@ namespace Contact_Billing_XamarinService.Models
         {
         } 
 
-        public DbSet<TodoItem> TodoItems { get; set; }
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Add(
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
+        public DbSet<DataObjects.User> Users { get; set; }
+
+        public DbSet<DataObjects.Contact> Contacts { get; set; }
+
+        public DbSet<DataObjects.Call> Calls { get; set; }
+
+        public DbSet<DataObjects.Project> Projects { get; set; }
     }
 
 }
