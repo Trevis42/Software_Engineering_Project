@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.Custom" parent="@style/Theme.AppCompat.Dialog"><item name="android:colorBackground">@color/material_blue_grey_800</item><item name="android:windowBackground">?android:attr/colorBackground</item></style>
+	<style name="Theme.Custom1" parent="Theme.AppCompat.Dialog"><item name="android:colorBackground">@color/material_blue_grey_800</item><item name="android:windowBackground">?android:attr/colorBackground</item></style>
+</resources>

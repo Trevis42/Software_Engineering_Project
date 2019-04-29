@@ -1,37 +1,41 @@
-﻿using Android.App;
-using Android.OS;
-using Android.Support.V7.App;
-using Android.Runtime;
+﻿
+using Android.App;
+using Android.Content.PM;
 using Android.Widget;
+using Android.OS;
+using Android.Content;
+using Microsoft.WindowsAzure.MobileServices;
 
-namespace work
+namespace LoginPage.Droid
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
+    [Activity(Label = "BAFD", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true , ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        private Button forgpswrt,createAccount;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.activity_main);
-            StartActivity(typeof(GetProfile));
+            SetContentView(Resource.Layout.login);
 
-            
-            forgpswrt = FindViewById<Button>(Resource.Id.button1);
-            createAccount = FindViewById<Button>(Resource.Id.button2);
-            forgpswrt.Click += (sender, e) =>
-            {
-                StartActivity(typeof(forgetPassword));
-            };
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            //var forgpswrt = FindViewById<Button>(Resource.Id.button1);
+            var createAccount = FindViewById<Button>(Resource.Id.button2);
+            //forgpswrt.Click += (sender, e) =>
+            //{
+            //    StartActivity(typeof(forgetPassword));
+            //};
             createAccount.Click += (sender, e) =>
             {
-                StartActivity(typeof(createAccount));
+                StartActivity(new Intent(this, typeof(createAccount)));  //go to create account page
             };
-            
-            //            login = FindViewById<Button>(Resource.Id.button1);
 
+            var loginButton = FindViewById<Button>(Resource.Id.button3);
 
+            loginButton.Click += (sender, e) =>
+            {
+                StartActivity(new Intent(this, typeof(HomePageActivity))); //go to home page when logged in
+            };
         }
     }
 }

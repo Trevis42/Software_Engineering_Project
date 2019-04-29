@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:minWidth="25px"
+	android:minHeight="25px"
+	android:background="#ff37474f">
+	<ImageView
+		android:src="@drawable/BAFDlogo"
+		android:layout_width="match_parent"
+		android:layout_height="130.0dp"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/Logo" />
+	<RelativeLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1Billing">
+		<TextView
+			android:text="[Customer Name]"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/customerName"
+			android:layout_centerHorizontal="true" />
+		<TextView
+			android:text="Billing Information"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/customerName"
+			android:id="@+id/textView2"
+			android:layout_centerHorizontal="true"
+			android:textColor="#ffffffff" />
+	</RelativeLayout>
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="34.0dp"
+		android:id="@+id/space1" />
+	<RelativeLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout2">
+		<TextView
+			android:text="Total amount of calls: "
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/totalCallsLabel"
+			android:textColor="#ffffffff" />
+		<TextView
+			android:text="Billed calls*: "
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/totalCallsLabel"
+			android:id="@+id/billedCallsLabel"
+			android:textColor="#ffffffff" />
+		<TextView
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/billedCallsLabel"
+			android:id="@+id/billedCalls" />
+		<TextView
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/totalCallsLabel"
+			android:id="@+id/totalCalls" />
+	</RelativeLayout>
+	<Button
+		android:text="calculate amount"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/calculateAmount"
+		android:backgroundTint="#ff2e7d32" />
+	<RelativeLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout2">
+		<TextView
+			android:text="Amount to Bill: "
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/amountToBillLabel"
+			android:textColor="#ffffffff" />
+		<TextView
+			android:text=""
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/amountToBillLabel"
+			android:id="@+id/amountToBill" />
+	</RelativeLayout>
+	<LinearLayout
+		android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true">
+		<Button
+			android:id="@+id/homeButtonBilling"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Home"
+			android:backgroundTint="#ff2e7d32">
+		</Button>
+		<Button
+			android:id="@+id/clientProfileBilling"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Client profile"
+			android:backgroundTint="#ff2e7d32" >
+		</Button>
+	</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ff37474f">
+	<ImageView
+		android:src="@drawable/BAFDlogo"
+		android:layout_width="match_parent"
+		android:layout_height="130.0dp"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/Logo"/>
+	<TextView
+		android:text="Billing App For Dummies"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:textColor="#ff2e7d32"/>
+	<Button
+		android:text="add client"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/addClient"
+		android:backgroundTint="#ff2e7d32"
+		android:onClick="changeButtonColor"/>
+	<Button
+		android:text="client list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/clientList"
+		android:backgroundTint="#ff2e7d32" />
+	<RelativeLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/relativeLayout1">
+		<Button
+			android:text="log out"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/logOut"
+			android:backgroundTint="#ffc62828"
+			android:layout_alignParentBottom = "true" />
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ff37474f">
+	<ScrollView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:stretchColumns="1">
+			<TextView
+				android:textStyle="bold"
+				android:layout_marginBottom="12dp"
+				android:layout_marginTop="12dp"
+				android:textSize="17dp"
+				android:text="Create New Account"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2" />
+			<LinearLayout
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#ff1e88e5">
+				<TextView
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:textSize="13dp"
+					android:text="Username"
+					android:layout_marginLeft="22dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/textView2" />
+				<android.support.design.widget.TextInputEditText
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:layout_toRightOf="@id/textView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/userName" />
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginTop="12dp"
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#ff1e88e5">
+				<TextView
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:textSize="13dp"
+					android:text="First Name"
+					android:layout_marginLeft="22dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/textView2" />
+				<android.support.design.widget.TextInputEditText
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:layout_toRightOf="@id/textView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/firstName" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginTop="12dp"
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#ff1e88e5">
+				<TextView
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:textSize="13dp"
+					android:text="Last Name"
+					android:layout_marginLeft="22dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/textView2" />
+				<android.support.design.widget.TextInputEditText
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:layout_toRightOf="@id/textView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/lastName" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginTop="12dp"
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#ff1e88e5">
+				<TextView
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:textSize="13dp"
+					android:text="Phone"
+					android:layout_marginLeft="22dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/textView2" />
+				<android.support.design.widget.TextInputEditText
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:layout_toRightOf="@id/textView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/phoneNumber" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginTop="12dp"
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#ff1e88e5">
+				<TextView
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:textSize="13dp"
+					android:text="Email"
+					android:layout_marginLeft="22dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/textView2" />
+				<android.support.design.widget.TextInputEditText
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:layout_toRightOf="@id/textView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/email" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginTop="12dp"
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#ff1e88e5">
+				<TextView
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:textSize="13dp"
+					android:text="Enter Password"
+					android:layout_marginLeft="22dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/textView2" />
+				<android.support.design.widget.TextInputEditText
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:layout_toRightOf="@id/textView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/password" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginTop="12dp"
+				android:gravity="bottom"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#ff1e88e5">
+				<TextView
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:textSize="13dp"
+					android:text="Re-Enter Password"
+					android:layout_marginLeft="22dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/textView2" />
+				<android.support.design.widget.TextInputEditText
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="22dp"
+					android:layout_toRightOf="@id/textView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/passwordAgain" />
+			</LinearLayout>
+			<Button
+				android:layout_marginLeft="22dp"
+				android:text="Enter"
+				android:layout_width="118.5dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/button3"
+				android:layout_gravity="right"
+				android:layout_marginRight="22dp"
+				android:background="#ff2e7d32" />
+		</TableLayout>
+	</ScrollView>
+	</RelativeLayout>
