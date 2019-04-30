@@ -1,4 +1,7 @@
-﻿
+﻿/*
+    This file works with the login UI and gets the login credentials of the user from the database. User can create account from here or login normally.
+    If user inputs incorrect credentials they will be notified.
+*/
 using Android.App;
 using Android.Content.PM;
 using Android.Widget;
@@ -6,6 +9,7 @@ using Android.OS;
 using Android.Content;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System;
 
 namespace LoginPage.Droid
 {
@@ -22,8 +26,6 @@ namespace LoginPage.Droid
             var userName = FindViewById<EditText>(Resource.Id.userNameInput);
             var passWord = FindViewById<EditText>(Resource.Id.passInput);
             bool loginStatus = false;
-            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfo", FileCreationMode.Private);
-            ISharedPreferencesEditor editor = pref.Edit();
             DataSet db = new DataSet();
 
             createAccount.Click += (sender, e) =>
@@ -32,29 +34,21 @@ namespace LoginPage.Droid
             };
 
             var loginButton = FindViewById<Button>(Resource.Id.loginButton);
-            MySqlConnection conn1 = new MySqlConnection("Server=sql9.freesqldatabase.com;Port=3306;database=sql9289950;Uid=sql9289950;Pwd=XpDGLinQFp;CharSet=utf8;default command timeout=30;");
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlConnection conn1 = new MySqlConnection("Server=sql9.freesqldatabase.com;Port=3306;database=sql9289950;Uid=sql9289950;Pwd=XpDGLinQFp;CharSet=utf8;default command timeout=30;");        //database connection string
 
             loginButton.Click += (sender, e) =>
             {
                 db.Clear();
-                adapter.SelectCommand = new MySqlCommand("SELECT * FROM Users WHERE Username = '@Username' AND Password = '@Password'");
-                adapter.SelectCommand.Connection = conn1;
-                adapter.SelectCommand.Parameters.AddWithValue("@Username", userName.Text);
-                adapter.SelectCommand.Parameters.AddWithValue("@Password", passWord.Text);
-                conn1.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM Users WHERE Username = @Username AND Password = @Password", conn1);      //get username and password
+                cmd.Parameters.AddWithValue("@Username", userName.Text);
+                cmd.Parameters.AddWithValue("@Password", passWord.Text);
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                adapter.SelectCommand = cmd;
                 adapter.Fill(db);
-                conn1.Close();
 
-                bool loginSuccess = db.Tables.Count > 0;
-
-                if (loginSuccess == true)
+                if (db.Tables[0].Rows.Count != 0)                                               //if combination of username and password is found, then login is successful
                 {
                     loginStatus = true;
-                    editor.PutBoolean("key_name1", loginStatus);
-                    editor.PutString("key_name2", userName.Text.Trim());
-                    editor.Apply();
-                    db.Clear();
                     AlertDialog.Builder alert = new AlertDialog.Builder(this);
                     alert.SetTitle("Account Login");
                     alert.SetMessage("Successfully logged in.");
@@ -65,12 +59,12 @@ namespace LoginPage.Droid
                     Dialog dialog = alert.Create();
                     alert.Show();
                 }
-                else
+                else                                                                              //otherwise, user needs to retry
                 {
-                    db.Clear();
+                    db.Clear();                                                                                                 
                     AlertDialog.Builder alert = new AlertDialog.Builder(this);
                     alert.SetTitle("Account Login");
-                    alert.SetMessage("Incorrect Username/Password");
+                    alert.SetMessage("Invalid Username/Password");
                     alert.SetPositiveButton("OK", (c, ev) =>
                     {
 

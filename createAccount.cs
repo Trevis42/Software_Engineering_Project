@@ -1,4 +1,7 @@
-﻿using System;
+﻿/*
+        This file connects to the create user account UI. New users will create their account with this class.
+*/
+using System;
 
 using Android.App;
 using Android.Content;
@@ -30,7 +33,7 @@ namespace LoginPage.Droid
 
                      EditText pwordagain = (EditText)FindViewById(Resource.Id.passwordAgain);                // Retype password string
 
-                     if (pwordagain.Text != pword.Text)                            // If password and retype password do not match
+                     if (pwordagain.Text != pword.Text)                                                     // If password and retype password do not match
                      {
                          AlertDialog.Builder errorBuilder = new AlertDialog.Builder(this);
                          errorBuilder.SetTitle("Error!");
@@ -57,7 +60,7 @@ namespace LoginPage.Droid
 
                      try
                      { 
-                         MySqlCommand cmd = new MySqlCommand("INSERT INTO Users(Username, First_Name, Last_Name, Phone_Number, Email, Password, Billing_Rate) VALUES(@Username, @First_Name, @Last_Name, @Phone_Number, @Email, @Password)");
+                         MySqlCommand cmd = new MySqlCommand("INSERT INTO Users(Username, First_Name, Last_Name, Phone_Number, Email, Password) VALUES(@Username, @First_Name, @Last_Name, @Phone_Number, @Email, @Password)");     //Insert username, first name, last name, phone number, email, and password into database
                          cmd.Connection = con;
                          con.Open();
                          cmd.Parameters.AddWithValue("@Username", username.Text);
@@ -67,8 +70,19 @@ namespace LoginPage.Droid
                          cmd.Parameters.AddWithValue("@Email", emailaccount.Text);
                          cmd.Parameters.AddWithValue("@Password", pwordagain.Text);
                          cmd.ExecuteNonQuery();
+
+                         AlertDialog.Builder alert = new AlertDialog.Builder(this);         //Notify user that account has been created
+                         alert.SetTitle("Account Creation");
+                         alert.SetMessage("Your account has been created!");
+                         alert.SetPositiveButton("OK", (senderAlert, args) =>
+                         {
+                             con.Close();
+                             StartActivity(new Intent(this, typeof(HomePageActivity)));
+                         });
+                         Dialog dialog = alert.Create();
+                         dialog.Show();
                      }
-                     catch (MySqlException ex)
+                     catch (MySqlException ex)                  //catch any MySql errors and notify user
                      {
                          AlertDialog.Builder connError = new AlertDialog.Builder(this);
                          connError.SetTitle("Connection Error!");
@@ -80,17 +94,6 @@ namespace LoginPage.Droid
                          Dialog dialog1 = connError.Create();
                          connError.Show();
                      }
-
-                     AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                     alert.SetTitle("Account Creation");
-                     alert.SetMessage("Your account has been created!");
-                     alert.SetPositiveButton("OK", (senderAlert, args) =>
-                     {
-                         con.Close();
-                         StartActivity(new Intent(this, typeof(HomePageActivity)));
-                     });
-                     Dialog dialog = alert.Create();
-                     dialog.Show();
 
                  };
 

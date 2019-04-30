@@ -18,21 +18,24 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_weight="33"
-			android:id="@+id/textView1" />
+			android:id="@+id/textClientFirst"
+			android:textColor="#ff000000" />
 		<TextView
 			android:text="Last Name"
 			android:textSize="15sp"
 			android:layout_width="wrap_content"
 			android:layout_weight="33"
 			android:layout_height="wrap_content"
-			android:id="@+id/textView2" />
+			android:id="@+id/textClientLast"
+			android:textColor="#ff000000" />
 		<TextView
 			android:text="Phone Number"
 			android:textSize="15sp"
-			android:layout_weight="34"
+			android:layout_weight="33"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/textView3" />
+			android:id="@+id/textClientPhone"
+			android:textColor="#ff000000" />
 
 
 	</LinearLayout>

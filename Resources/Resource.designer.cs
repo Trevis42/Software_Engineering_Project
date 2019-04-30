@@ -5063,8 +5063,8 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090037
 			public const int SYM = 2131296311;
 			
-			// aapt resource value: 0x7f0900a3
-			public const int accountUserName = 2131296419;
+			// aapt resource value: 0x7f0900a2
+			public const int accountUserName = 2131296418;
 			
 			// aapt resource value: 0x7f0900e8
 			public const int action0 = 2131296488;
@@ -5132,8 +5132,8 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f0900c2
 			public const int addClient = 2131296450;
 			
-			// aapt resource value: 0x7f0900b1
-			public const int addClientButton = 2131296433;
+			// aapt resource value: 0x7f0900b0
+			public const int addClientButton = 2131296432;
 			
 			// aapt resource value: 0x7f090070
 			public const int alertTitle = 2131296368;
@@ -5171,14 +5171,14 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f09003d
 			public const int bottom = 2131296317;
 			
+			// aapt resource value: 0x7f09009a
+			public const int bottomtab_navarea = 2131296410;
+			
 			// aapt resource value: 0x7f09009b
-			public const int bottomtab_navarea = 2131296411;
+			public const int bottomtab_tabbar = 2131296411;
 			
-			// aapt resource value: 0x7f09009c
-			public const int bottomtab_tabbar = 2131296412;
-			
-			// aapt resource value: 0x7f0900ab
-			public const int button3 = 2131296427;
+			// aapt resource value: 0x7f0900aa
+			public const int button3 = 2131296426;
 			
 			// aapt resource value: 0x7f090063
 			public const int buttonPanel = 2131296355;
@@ -5204,14 +5204,11 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f0900f1
 			public const int chronometer = 2131296497;
 			
-			// aapt resource value: 0x7f0900b0
-			public const int clientBilling = 2131296432;
+			// aapt resource value: 0x7f0900af
+			public const int clientBilling = 2131296431;
 			
 			// aapt resource value: 0x7f0900c3
 			public const int clientList = 2131296451;
-			
-			// aapt resource value: 0x7f09009a
-			public const int clientProfileBilling = 2131296410;
 			
 			// aapt resource value: 0x7f09004e
 			public const int clip_horizontal = 2131296334;
@@ -5222,20 +5219,20 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090039
 			public const int collapseActionView = 2131296313;
 			
-			// aapt resource value: 0x7f0900b4
-			public const int container = 2131296436;
+			// aapt resource value: 0x7f0900b3
+			public const int container = 2131296435;
 			
 			// aapt resource value: 0x7f090066
 			public const int contentPanel = 2131296358;
 			
-			// aapt resource value: 0x7f0900b5
-			public const int coordinator = 2131296437;
+			// aapt resource value: 0x7f0900b4
+			public const int coordinator = 2131296436;
 			
 			// aapt resource value: 0x7f0900c9
 			public const int createAccountButton = 2131296457;
 			
-			// aapt resource value: 0x7f0900a2
-			public const int createAccountLabel = 2131296418;
+			// aapt resource value: 0x7f0900a1
+			public const int createAccountLabel = 2131296417;
 			
 			// aapt resource value: 0x7f09006d
 			public const int custom = 2131296365;
@@ -5252,20 +5249,20 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090060
 			public const int default_activity_button = 2131296352;
 			
-			// aapt resource value: 0x7f0900b7
-			public const int design_bottom_sheet = 2131296439;
-			
-			// aapt resource value: 0x7f0900be
-			public const int design_menu_item_action_area = 2131296446;
+			// aapt resource value: 0x7f0900b6
+			public const int design_bottom_sheet = 2131296438;
 			
 			// aapt resource value: 0x7f0900bd
-			public const int design_menu_item_action_area_stub = 2131296445;
+			public const int design_menu_item_action_area = 2131296445;
 			
 			// aapt resource value: 0x7f0900bc
-			public const int design_menu_item_text = 2131296444;
+			public const int design_menu_item_action_area_stub = 2131296444;
 			
 			// aapt resource value: 0x7f0900bb
-			public const int design_navigation_view = 2131296443;
+			public const int design_menu_item_text = 2131296443;
+			
+			// aapt resource value: 0x7f0900ba
+			public const int design_navigation_view = 2131296442;
 			
 			// aapt resource value: 0x7f090020
 			public const int disableHome = 2131296288;
@@ -5273,11 +5270,11 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f09007e
 			public const int edit_query = 2131296382;
 			
-			// aapt resource value: 0x7f0900a8
-			public const int email = 2131296424;
+			// aapt resource value: 0x7f0900a7
+			public const int email = 2131296423;
 			
-			// aapt resource value: 0x7f0900af
-			public const int emailClient = 2131296431;
+			// aapt resource value: 0x7f0900ae
+			public const int emailClient = 2131296430;
 			
 			// aapt resource value: 0x7f090030
 			public const int end = 2131296304;
@@ -5309,20 +5306,20 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090048
 			public const int fill_vertical = 2131296328;
 			
-			// aapt resource value: 0x7f0900a5
-			public const int firstName = 2131296421;
+			// aapt resource value: 0x7f0900a4
+			public const int firstName = 2131296420;
 			
-			// aapt resource value: 0x7f0900ac
-			public const int firstNameClient = 2131296428;
+			// aapt resource value: 0x7f0900ab
+			public const int firstNameClient = 2131296427;
 			
 			// aapt resource value: 0x7f090054
 			public const int @fixed = 2131296340;
 			
-			// aapt resource value: 0x7f0900c0
-			public const int flyoutcontent_appbar = 2131296448;
+			// aapt resource value: 0x7f0900bf
+			public const int flyoutcontent_appbar = 2131296447;
 			
-			// aapt resource value: 0x7f0900c1
-			public const int flyoutcontent_recycler = 2131296449;
+			// aapt resource value: 0x7f0900c0
+			public const int flyoutcontent_recycler = 2131296448;
 			
 			// aapt resource value: 0x7f090058
 			public const int forever = 2131296344;
@@ -5363,14 +5360,14 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090000
 			public const int item_touch_helper_previous_elevation = 2131296256;
 			
-			// aapt resource value: 0x7f0900b3
-			public const int largeLabel = 2131296435;
+			// aapt resource value: 0x7f0900b2
+			public const int largeLabel = 2131296434;
 			
-			// aapt resource value: 0x7f0900a6
-			public const int lastName = 2131296422;
+			// aapt resource value: 0x7f0900a5
+			public const int lastName = 2131296421;
 			
-			// aapt resource value: 0x7f0900ad
-			public const int lastNameClient = 2131296429;
+			// aapt resource value: 0x7f0900ac
+			public const int lastNameClient = 2131296428;
 			
 			// aapt resource value: 0x7f090049
 			public const int left = 2131296329;
@@ -5381,14 +5378,14 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090018
 			public const int line3 = 2131296280;
 			
-			// aapt resource value: 0x7f09009d
-			public const int linearLayout1 = 2131296413;
+			// aapt resource value: 0x7f09009c
+			public const int linearLayout1 = 2131296412;
 			
 			// aapt resource value: 0x7f09001d
 			public const int listMode = 2131296285;
 			
-			// aapt resource value: 0x7f0900a1
-			public const int listSearchView = 2131296417;
+			// aapt resource value: 0x7f0900a0
+			public const int listSearchView = 2131296416;
 			
 			// aapt resource value: 0x7f090061
 			public const int list_item = 2131296353;
@@ -5504,8 +5501,8 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090028
 			public const int multiply = 2131296296;
 			
-			// aapt resource value: 0x7f0900ba
-			public const int navigation_header_container = 2131296442;
+			// aapt resource value: 0x7f0900b9
+			public const int navigation_header_container = 2131296441;
 			
 			// aapt resource value: 0x7f09003b
 			public const int never = 2131296315;
@@ -5537,17 +5534,17 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f0900c8
 			public const int passInput = 2131296456;
 			
+			// aapt resource value: 0x7f0900a8
+			public const int password = 2131296424;
+			
 			// aapt resource value: 0x7f0900a9
-			public const int password = 2131296425;
+			public const int passwordAgain = 2131296425;
 			
-			// aapt resource value: 0x7f0900aa
-			public const int passwordAgain = 2131296426;
+			// aapt resource value: 0x7f0900a6
+			public const int phoneNumber = 2131296422;
 			
-			// aapt resource value: 0x7f0900a7
-			public const int phoneNumber = 2131296423;
-			
-			// aapt resource value: 0x7f0900ae
-			public const int phoneNumberClient = 2131296430;
+			// aapt resource value: 0x7f0900ad
+			public const int phoneNumberClient = 2131296429;
 			
 			// aapt resource value: 0x7f09004d
 			public const int pin = 2131296333;
@@ -5606,9 +5603,6 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090055
 			public const int scrollable = 2131296341;
 			
-			// aapt resource value: 0x7f0900a0
-			public const int searchBar = 2131296416;
-			
 			// aapt resource value: 0x7f090080
 			public const int search_badge = 2131296384;
 			
@@ -5666,14 +5660,14 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f0900ff
 			public const int sliding_tabs = 2131296511;
 			
-			// aapt resource value: 0x7f0900b2
-			public const int smallLabel = 2131296434;
-			
-			// aapt resource value: 0x7f0900b9
-			public const int snackbar_action = 2131296441;
+			// aapt resource value: 0x7f0900b1
+			public const int smallLabel = 2131296433;
 			
 			// aapt resource value: 0x7f0900b8
-			public const int snackbar_text = 2131296440;
+			public const int snackbar_action = 2131296440;
+			
+			// aapt resource value: 0x7f0900b7
+			public const int snackbar_text = 2131296439;
 			
 			// aapt resource value: 0x7f090043
 			public const int snap = 2131296323;
@@ -5720,23 +5714,29 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f09001b
 			public const int text2 = 2131296283;
 			
+			// aapt resource value: 0x7f09009d
+			public const int textClientFirst = 2131296413;
+			
+			// aapt resource value: 0x7f09009e
+			public const int textClientLast = 2131296414;
+			
+			// aapt resource value: 0x7f09009f
+			public const int textClientPhone = 2131296415;
+			
 			// aapt resource value: 0x7f09006a
 			public const int textSpacerNoButtons = 2131296362;
 			
 			// aapt resource value: 0x7f090069
 			public const int textSpacerNoTitle = 2131296361;
 			
-			// aapt resource value: 0x7f09009e
-			public const int textView1 = 2131296414;
+			// aapt resource value: 0x7f0900c1
+			public const int textView1 = 2131296449;
 			
 			// aapt resource value: 0x7f09008e
 			public const int textView2 = 2131296398;
 			
-			// aapt resource value: 0x7f09009f
-			public const int textView3 = 2131296415;
-			
-			// aapt resource value: 0x7f0900bf
-			public const int text_input_password_toggle = 2131296447;
+			// aapt resource value: 0x7f0900be
+			public const int text_input_password_toggle = 2131296446;
 			
 			// aapt resource value: 0x7f090014
 			public const int textinput_counter = 2131296276;
@@ -5771,8 +5771,8 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090091
 			public const int totalCallsLabel = 2131296401;
 			
-			// aapt resource value: 0x7f0900b6
-			public const int touch_outside = 2131296438;
+			// aapt resource value: 0x7f0900b5
+			public const int touch_outside = 2131296437;
 			
 			// aapt resource value: 0x7f09000f
 			public const int transition_current_scene = 2131296271;
@@ -5798,8 +5798,8 @@ namespace LoginPage.Droid
 			// aapt resource value: 0x7f090026
 			public const int useLogo = 2131296294;
 			
-			// aapt resource value: 0x7f0900a4
-			public const int userName = 2131296420;
+			// aapt resource value: 0x7f0900a3
+			public const int userName = 2131296419;
 			
 			// aapt resource value: 0x7f0900c7
 			public const int userNameInput = 2131296455;

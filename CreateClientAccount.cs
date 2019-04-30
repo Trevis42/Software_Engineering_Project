@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+    This file works with the create client account UI. Users can create the account for their clients with their client's name, phone number, email, and billing rate.
+
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,22 +37,22 @@ namespace LoginPage.Droid
                 EditText clientBillingRate = FindViewById<EditText>(Resource.Id.clientBilling);
                 double billing_rate = double.Parse(clientBillingRate.Text);
 
-                MySqlConnection conn = new MySqlConnection("Server=sql9.freesqldatabase.com;Port=3306;database=sql9289950;Uid=sql9289950;Pwd=XpDGLinQFp;CharSet=utf8;default command timeout=30;");
+                MySqlConnection conn = new MySqlConnection("Server=sql9.freesqldatabase.com;Port=3306;database=sql9289950;Uid=sql9289950;Pwd=XpDGLinQFp;CharSet=utf8;default command timeout=30;");     //database connection
 
                 try
                 {
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO Contacts(First_Name, Last_Name, Phone_Number, Email, Billing_Rate) VALUES(@First_Name, @Last_Name, @Phone_Number, @Email, @Billing_Rate)");
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO Contacts(First_Name, Last_Name, Phone_Number, Email, Billing_Rate) VALUES(@First_Name, @Last_Name, @Phone_Number, @Email, @Billing_Rate)");    //insert client details in contact table
                     cmd.Connection = conn;
                     conn.Open();
-                    cmd.Parameters.AddWithValue("@First_Name", clientFirst.Text);
-                    cmd.Parameters.AddWithValue("@Last_Name", clientLast.Text);
-                    cmd.Parameters.AddWithValue("@Phone_Number", clientPhone.Text);
-                    cmd.Parameters.AddWithValue("@Email", clientEmail.Text);
-                    cmd.Parameters.AddWithValue("@Billing_Rate", billing_rate);
+                    cmd.Parameters.AddWithValue("@First_Name", clientFirst.Text);       //user input client first name
+                    cmd.Parameters.AddWithValue("@Last_Name", clientLast.Text);         //client last name
+                    cmd.Parameters.AddWithValue("@Phone_Number", clientPhone.Text);     //client phone number
+                    cmd.Parameters.AddWithValue("@Email", clientEmail.Text);            //client email
+                    cmd.Parameters.AddWithValue("@Billing_Rate", billing_rate);         //client billing rate
                     cmd.ExecuteNonQuery();
 
                 }
-                catch (MySqlException ex)
+                catch (MySqlException ex)                                                 //if any MySql errors occur, user will be notified.
                 {
                     AlertDialog.Builder connError = new AlertDialog.Builder(this);
                     connError.SetTitle("Connection Error!");
@@ -61,7 +65,7 @@ namespace LoginPage.Droid
                     connError.Show();
                 }
 
-                AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                AlertDialog.Builder alert = new AlertDialog.Builder(this);      //alerts when the client account has been created
                 alert.SetTitle("Client Creation");
                 alert.SetMessage("Your client's account has been created!");
                 alert.SetPositiveButton("OK", (senderAlert, args) =>
