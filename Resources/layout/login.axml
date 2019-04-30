@@ -21,7 +21,7 @@
 	<android.support.design.widget.TextInputEditText
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/textInputEditText1" />
+		android:id="@+id/userNameInput" />
 	<TextView
 		android:textSize="21.0dp"
 		android:text="Password"
@@ -32,31 +32,27 @@
 	<android.support.design.widget.TextInputEditText
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/textInputEditText2" />
-	<Button
-		android:text="Login"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:id="@+id/button3"
-		android:layout_gravity="right"
-		android:layout_marginRight="22dp" />
+		android:id="@+id/passInput" />
+
 	<LinearLayout
-		android:layout_alignParentBottom="true"
+		android:minWidth="25px"
+		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:orientation="horizontal">
+		android:id="@+id/relativeLayout1" >
 		<Button
-			android:text="forget Password"
+			android:text="Create account"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:id="@+id/button1" />
+			android:id="@+id/createAccountButton" />
 		<Button
-			android:text="Create Account"
+			android:text="login"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:id="@+id/button2" />
+			android:layout_toRightOf="@id/createAccountButton"
+			android:id="@+id/loginButton" />
 	</LinearLayout>
 	
 </LinearLayout>

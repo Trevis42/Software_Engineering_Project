@@ -4,36 +4,37 @@
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:backgroundTint="#ff37474f">
-	<RelativeLayout
+	android:backgroundTint="#ff37474f"
+	android:weightSum="100">
+	<LinearLayout
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:id="@+id/relativeLayout1">
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1">
 		<TextView
-			android:text=""
-			android:textSize="25sp"
-			android:layout_width="wrap_content"
-			android:layout_height="45.5dp"
-			android:id="@+id/textView1"
-			android:includeFontPadding="true"
-			android:padding="6dp" />
-		<Button
-			android:text="bill"
+			android:text="First Name"
+			android:textSize="15sp"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_toRightOf="@id/textView1"
-			android:id="@+id/billButton"
-			app:backgroundTint="#ff2e7d32" />
-		<Button
-			android:text="Call"
+			android:layout_weight="33"
+			android:id="@+id/textView1" />
+		<TextView
+			android:text="Last Name"
+			android:textSize="15sp"
+			android:layout_width="wrap_content"
+			android:layout_weight="33"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView2" />
+		<TextView
+			android:text="Phone Number"
+			android:textSize="15sp"
+			android:layout_weight="34"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_toRightOf="@id/billButton"
-			android:id="@+id/callButton"
-			app:backgroundTint="#ff1e88e5" />
+			android:id="@+id/textView3" />
 
-	</RelativeLayout>
+
+	</LinearLayout>
 
 </LinearLayout>

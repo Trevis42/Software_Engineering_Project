@@ -24,7 +24,7 @@
 				android:gravity="center_horizontal"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:id="@+id/textView2" />
+				android:id="@+id/createAccountLabel" />
 			<LinearLayout
 				android:gravity="bottom"
 				android:layout_width="match_parent"
@@ -39,7 +39,7 @@
 					android:layout_marginLeft="22dp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:id="@+id/textView2" />
+					android:id="@+id/accountUserName" />
 				<android.support.design.widget.TextInputEditText
 					android:layout_marginRight="12dp"
 					android:layout_marginTop="22dp"
